@@ -15,6 +15,7 @@ Sharpen images using the popular "Unsharp Masking &amp; High Boost Filtering" te
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
 - [Theory and Approach](#theory-and-approach)
+- [Results and Outcomes](#results-and-outcomes)
 - [Contributors](#contributors)
 - [Acknowledgements and Resources](#acknowledgements-and-resources)
 
@@ -107,21 +108,28 @@ Both the Mean blur kernel and the Gaussian kernel are commonly used in image pro
 - The grayscale colormap (`'gray'`) is used to display the images.
 - ![output](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/6c734f81-03c3-4ac2-a115-945d78409e4f)
 
-### Conclusion
-Unsharp masking and high-boost filtering are both image
-enhancement techniques used to improve the sharpness and details in
-images. They are commonly applied in image processing and computer
-vision applications. Unsharp masking is a technique that involves
-subtracting a blurred version of an image from the original image to
-enhance its edges and details. Unsharp masking is particularly useful for
-improving image quality, such as in photography or medical imaging, where
-enhancing details and edges is desired.High-boost filtering is a generalized
-version of unsharp masking that allows for more control over the
-sharpening effect.By adjusting the scale factor, high-boost filtering can
-produce different levels of sharpening, ranging from subtle enhancement to
-more pronounced sharpening effects.
+### Results and Outcomes
+Unsharp masking and high-boost filtering are both image enhancement techniques used to improve the sharpness and details in images. They are commonly applied in image processing and computer vision applications. Unsharp masking is a technique that involves subtracting a blurred version of an image from the original image to enhance its edges and details. Unsharp masking is particularly useful for improving image quality, such as in photography or medical imaging, where enhancing details and edges is desired.High-boost filtering is a generalized version of unsharp masking that allows for more control over the
+sharpening effect.By adjusting the scale factor, high-boost filtering can produce different levels of sharpening, ranging from subtle enhancement to more pronounced sharpening effects.
+
+#### Comparing Mean Blur with Gaussian Blur
+
+The from-scratch mean-blur algorithm took significantly more compute time than OpenCVs built-in Gaussian blur function.   
+|Mean Blur|Gaussian Blur|
+|---|---|
+|![mean blur image](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/7cbb51df-10bc-415b-8458-b3ba8c1953e2)|![mean blur opencv](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/8b8d3452-ed5d-41dd-b38f-b5042eade550)|
+
+#### Studying the sharpened output of Unsharp masking vs Highboost filtering
+
+|Original Image|Unsharp Masking K=1|Highboost filtering K=10|
+|---|---|---|
+|![original image](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/750b7eee-ea11-412d-aec4-86316c1c68ee)|||
 
 ## Contributors
 
 - [Yash Deshpande](https://github.com/yashLM705)
 
+
+## Acknowledgements and Resources
+- [Prof. Faruk Kazi, VJTI](https://www.linkedin.com/in/dr-faruk-kazi-vjti/?originalSubdomain=in)
+- Digital Image Processing by Rafael Gonzalez, 4th Edition
