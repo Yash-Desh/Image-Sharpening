@@ -123,7 +123,7 @@ The from-scratch mean-blur algorithm took significantly more compute time than O
 
 |Original Image|Unsharp Masking K=1|Highboost filtering K=10|
 |---|---|---|
-|![original image](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/750b7eee-ea11-412d-aec4-86316c1c68ee)|||
+|![original image](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/750b7eee-ea11-412d-aec4-86316c1c68ee)|![unsharp mask](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/ecccc0f8-cc09-47b8-9c7e-3c02a6ff4943)|![highboost filter](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/ce1264c0-5031-4ac2-b065-121b8076615d)|
 
 ## Contributors
 
