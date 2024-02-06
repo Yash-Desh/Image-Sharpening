@@ -66,19 +66,20 @@ Both the Mean blur kernel and the Gaussian kernel are commonly used in image pro
 ### 1. Loading and Normalizing Image:
 - Load any image, here I have taken the popular 'Lenna.png' using OpenCV's `imread` function with the parameter `0`, which loads the image in grayscale.
 - The loaded image is then divided by 255 to normalize the pixel values between 0 and 1.
-![original image](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/750b7eee-ea11-412d-aec4-86316c1c68ee)
+- ![original image](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/750b7eee-ea11-412d-aec4-86316c1c68ee)
 
 
 ### 2. Blurring the Image:
 - Apply a Gaussian blur to the original image using OpenCV's `Blur` function.
 - The `ksize` parameter specifies the size of the blur kernel, which is set to (31, 31) in this case.
-![mean blur opencv](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/8b8d3452-ed5d-41dd-b38f-b5042eade550)
+- ![mean blur opencv](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/8b8d3452-ed5d-41dd-b38f-b5042eade550)
 
 
 ### 3. Creating a Mask:
 - Then subtract the blurred image from the original image to obtain a mask. This is done element-wise for each pixel.
 - The resulting mask highlights the edges and details present in the original image.
-![mask1](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/2bfe8cd8-f1b4-487f-9658-92a86b230327)
+- ![mask1](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/2bfe8cd8-f1b4-487f-9658-92a86b230327)
+
 
 
 ### 4. Performing Unsharp Masking:
@@ -86,7 +87,7 @@ Both the Mean blur kernel and the Gaussian kernel are commonly used in image pro
 - The mask is multiplied by `k` and added back to the original image. This enhances the edges and details.
 - The resulting image is stored in `g`.
 - For k=5
-![k5](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/8f7311b1-906e-47d9-ab19-ae5c14140b31)
+- ![k5](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/8f7311b1-906e-47d9-ab19-ae5c14140b31)
 
 
 ### 5. Clipping Pixel Values:
@@ -96,7 +97,7 @@ Both the Mean blur kernel and the Gaussian kernel are commonly used in image pro
 ### 6. Displaying the Output:
 - Then using Matplotlib's `imshow` function, display the the final sharpened image (`g`).
 - The grayscale colormap (`'gray'`) is used to display the images.
-![output](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/6c734f81-03c3-4ac2-a115-945d78409e4f)
+- ![output](https://github.com/Yash-Desh/Image-Sharpening/assets/84829056/6c734f81-03c3-4ac2-a115-945d78409e4f)
 
 
 
