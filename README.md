@@ -12,12 +12,9 @@ Sharpen images using the popular "Unsharp Masking &amp; High Boost Filtering" te
     - [Aim](#aim)
     - [Description](#description)
 - [Getting Started](#getting-started)
-    - [Components](#components)
-    - [Tech Stack](#tech-stack)
-    - [Software](#software)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 - [Theory and Approach](#theory-and-approach)
-- [Future Work](#future-work)
-- [Troubleshooting](#troubleshooting)
 - [Contributors](#contributors)
 - [Acknowledgements and Resources](#acknowledgements-and-resources)
 
@@ -49,7 +46,7 @@ For installation of pip you can refer [here](https://www.geeksforgeeks.org/how-t
 Clone the repo
     
     
-    git clone [https://github.com/Yash-Desh/Google-Playstore-EDA.git](https://github.com/Yash-Desh/Image-Sharpening.git)
+    git clone https://github.com/Yash-Desh/Google-Playstore-EDA.git
 
 ## Theory and Approach
 
