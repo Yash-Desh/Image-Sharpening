@@ -22,7 +22,7 @@ Sharpen images using the popular "Unsharp Masking &amp; High Boost Filtering" te
 
 ### Aim
 
-The aim of this project is to enhance image sharpness and clarity by implementing the well-known "Unsharp Masking & High Boost Filtering" technique, employing the Mean Blur kernel. Through this endeavor, I seek to explore the effectiveness of these methods in sharpening images while preserving important details and minimizing noise. By evaluating the results and comparing them against existing sharpening techniques, my aim is to provide insights into the optimal application of these methods for various image enhancement tasks.
+The aim of this project is to enhance image sharpness and clarity by implementing the well-known "Unsharp Masking & High Boost Filtering" technique, employing the Mean Blur kernel. By evaluating the results and comparing them against a from scratch mean blur algorithm, my aim is to provide insights into the optimal application of these methods for various image enhancement tasks.
 
 ### Description
 This technique involves the application of a blurred version of the original image to the image itself, accentuating edges and enhancing overall clarity. By exploring the effectiveness of these methods, the project provides a comprehensive understanding of their application in image sharpening tasks. Through experimentation and analysis, the project aims to determine the optimal parameters for achieving high-quality image enhancements while minimizing artifacts and preserving essential details.
